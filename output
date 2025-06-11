@@ -1,0 +1,126 @@
+INFO:__main__:Tutor Agent initialized with 4 specialized agents
+Choose mode:
+1. Interactive Mode
+2. Demo Mode
+Enter choice (1 or 2): 2
+🚀 Running Demo Mode...
+
+❓ Question: Calculate 15 * 8 + sqrt(25)
+INFO:__main__:Processing query: Calculate 15 * 8 + sqrt(25)
+INFO:__main__:Agent math_agent confidence: 0.4
+INFO:__main__:Agent physics_agent confidence: 0.0
+INFO:__main__:Agent chemistry_agent confidence: 0.0
+INFO:__main__:Agent general_agent confidence: 0.3
+INFO:__main__:Selected agent: math_agent
+INFO:__main__:Response generated with confidence: 0.9
+✅ Answer: Math Agent: Error in calculation: invalid syntax (<string>, line 1)
+[Tools used: calculator]
+
+❓ Question: What is the formula for velocity?
+INFO:__main__:Processing query: What is the formula for velocity?
+INFO:__main__:Agent math_agent confidence: 0.2
+INFO:__main__:Agent physics_agent confidence: 0.25
+INFO:__main__:Agent chemistry_agent confidence: 0.0
+INFO:__main__:Agent general_agent confidence: 0.3
+INFO:__main__:Selected agent: general_agent
+INFO:__main__:Response generated with confidence: 0.0
+✅ Answer: General Agent Error: 
+  No API_KEY or ADC found. Please either:
+    - Set the `GOOGLE_API_KEY` environment variable.
+    - Manually pass the key with `genai.configure(api_key=my_api_key)`.
+    - Or set up Application Default Credentials, see https://ai.google.dev/gemini-api/docs/oauth for more information.
+
+
+❓ Question: Tell me about oxygen
+INFO:__main__:Processing query: Tell me about oxygen
+INFO:__main__:Agent math_agent confidence: 0.0
+INFO:__main__:Agent physics_agent confidence: 0.0
+INFO:__main__:Agent chemistry_agent confidence: 0.0
+INFO:__main__:Agent general_agent confidence: 0.3
+INFO:__main__:Selected agent: general_agent
+INFO:__main__:Response generated with confidence: 0.0
+✅ Answer: General Agent Error: 
+  No API_KEY or ADC found. Please either:
+    - Set the `GOOGLE_API_KEY` environment variable.
+    - Manually pass the key with `genai.configure(api_key=my_api_key)`.
+    - Or set up Application Default Credentials, see https://ai.google.dev/gemini-api/docs/oauth for more information.
+
+
+❓ Question: Solve for x: 2x + 5 = 15
+INFO:__main__:Processing query: Solve for x: 2x + 5 = 15
+INFO:__main__:Agent math_agent confidence: 0.2
+INFO:__main__:Agent physics_agent confidence: 0.0
+INFO:__main__:Agent chemistry_agent confidence: 0.0
+INFO:__main__:Agent general_agent confidence: 0.3
+INFO:__main__:Selected agent: general_agent
+INFO:__main__:Response generated with confidence: 0.0
+✅ Answer: General Agent Error: 
+  No API_KEY or ADC found. Please either:
+    - Set the `GOOGLE_API_KEY` environment variable.
+    - Manually pass the key with `genai.configure(api_key=my_api_key)`.
+    - Or set up Application Default Credentials, see https://ai.google.dev/gemini-api/docs/oauth for more information.
+
+
+❓ Question: What is force in physics?
+INFO:__main__:Processing query: What is force in physics?
+INFO:__main__:Agent math_agent confidence: 0.0
+INFO:__main__:Agent physics_agent confidence: 0.5
+INFO:__main__:Agent chemistry_agent confidence: 0.25
+INFO:__main__:Agent general_agent confidence: 0.3
+INFO:__main__:Selected agent: physics_agent
+INFO:__main__:Response generated with confidence: 0.85
+✅ Answer: Physics Agent: Formula for force: F = m*a
+[Tools used: physics_calculator]
+
+❓ Question: What is the atomic number of carbon?
+INFO:__main__:Processing query: What is the atomic number of carbon?
+INFO:__main__:Agent math_agent confidence: 0.0
+INFO:__main__:Agent physics_agent confidence: 0.0
+INFO:__main__:Agent chemistry_agent confidence: 0.25
+INFO:__main__:Agent general_agent confidence: 0.3
+INFO:__main__:Selected agent: general_agent
+INFO:__main__:Response generated with confidence: 0.0
+✅ Answer: General Agent Error:
+  No API_KEY or ADC found. Please either:
+    - Set the `GOOGLE_API_KEY` environment variable.
+    - Manually pass the key with `genai.configure(api_key=my_api_key)`.
+    - Or set up Application Default Credentials, see https://ai.google.dev/gemini-api/docs/oauth for more information.
+
+
+PS C:\Users\k.padmini> 1
+1
+PS C:\Users\k.padmini>  python tutor_Agent.py 
+INFO:__main__:Tutor Agent initialized with 4 specialized agents
+Choose mode:
+1. Interactive Mode
+2. Demo Mode
+Enter choice (1 or 2): 1
+============================================================
+🤖 AI TUTOR - Multi-Agent Learning Assistant
+============================================================
+
+Available Specialists:
+📚 Math Agent: arithmetic, algebra, calculus, geometry, trigonometry, statistics, probability
+📚 Physics Agent: mechanics, thermodynamics, electromagnetism, optics, quantum, relativity
+📚 Chemistry Agent: organic, inorganic, analytical, physical, biochemistry, periodic_table
+📚 General Agent: general_knowledge, conversation, guidance
+
+============================================================
+Type your questions or 'quit' to exit
+Examples:
+- 'Calculate 2^3 + sqrt(16)'
+- 'What is the formula for force?'
+- 'Tell me about carbon'
+============================================================
+
+🎓 Ask me anything: definition of atoms and molecules
+🤔 Thinking...
+INFO:__main__:Processing query: definition of atoms and molecules
+INFO:__main__:Agent math_agent confidence: 0.0
+INFO:__main__:Agent physics_agent confidence: 0.0
+INFO:__main__:Agent chemistry_agent confidence: 0.5
+INFO:__main__:Agent general_agent confidence: 0.3
+INFO:__main__:Selected agent: chemistry_agent
+INFO:__main__:Response generated with confidence: 0.8
+✅ Chemistry Agent: Please specify an element name for information
+[Tools used: chemistry_reference]
